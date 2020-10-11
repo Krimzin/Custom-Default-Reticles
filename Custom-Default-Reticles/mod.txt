@@ -1,0 +1,25 @@
+{
+	"name": "Custom Default Reticles",
+	"description": "A mod that enables you to set default reticles for your sights.",
+	"author": "Krimzin",
+	"contact": "https://github.com/Krimzin/Custom-Default-Reticles",
+	"version": "1.0.0",
+	"hooks": [
+		{
+			"script_path": "hooks/BlackMarketGui.lua",
+			"hook_id": "lib/managers/menu/BlackMarketGui"
+		},
+		{
+			"script_path": "hooks/Core.lua",
+			"hook_id": "lib/setups/Setup"
+		},
+		{
+			"script_path": "hooks/Localization.lua",
+			"hook_id": "lib/managers/LocalizationManager"
+		},
+		{
+			"script_path": "hooks/MenuManager.lua",
+			"hook_id": "lib/managers/MenuManager"
+		}
+	]
+}
