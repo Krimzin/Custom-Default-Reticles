@@ -21,12 +21,12 @@ function CustomDefaultReticles:load()
 	end
 end
 
-function CustomDefaultReticles:set_data_string(name, color_index, type_index)
-	self.data[name] = color_index .. " " .. type_index
+function CustomDefaultReticles:set_data_string(part_id, color_index, type_index)
+	self.data[part_id] = color_index .. " " .. type_index
 end
 
-function CustomDefaultReticles:get_data_string(name)
-	return self.data[name]
+function CustomDefaultReticles:get_data_string(part_id)
+	return self.data[part_id]
 end
 
 CustomDefaultReticles:load()
